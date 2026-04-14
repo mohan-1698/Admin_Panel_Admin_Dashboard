@@ -1,7 +1,11 @@
 package com.srm.hackathon.adminpanel.base;
 
+import java.time.Duration;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.srm.hackathon.adminpanel.factory.DriverFactory;
 import com.srm.hackathon.adminpanel.utils.WaitUtils;
@@ -38,5 +42,10 @@ public class BasePage {
     protected void scrollToElement(WebElement element) {
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+    }
+    
+    protected Alert waitForAlert() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        return wait.until(ExpectedConditions.alertIsPresent());
     }
 }
