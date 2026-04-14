@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T14:12:35 IST" name="Default suite" finished-at="2026-04-14T14:12:45 IST" duration-ms="10027">
+  <suite started-at="2026-04-14T15:40:51 IST" name="Suite" finished-at="2026-04-14T15:41:35 IST" duration-ms="43804">
     <groups>
     </groups>
-    <test started-at="2026-04-14T14:12:35 IST" name="Default test" finished-at="2026-04-14T14:12:45 IST" duration-ms="10027">
-      <class name="com.srm.hackathon.adminpanel.tests.BaseTestCheck">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.BaseTestCheck@1d296da]" started-at="2026-04-14T14:12:35 IST" name="setUp" finished-at="2026-04-14T14:12:44 IST" duration-ms="9171" status="PASS">
+    <test started-at="2026-04-14T15:40:51 IST" name="Form Tests" finished-at="2026-04-14T15:41:35 IST" duration-ms="43804">
+      <class name="com.srm.hackathon.adminpanel.tests.FormTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:40:51 IST" name="setUp" finished-at="2026-04-14T15:41:02 IST" duration-ms="10386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySetup()[pri:0, instance:com.srm.hackathon.adminpanel.tests.BaseTestCheck@1d296da]" started-at="2026-04-14T14:12:44 IST" name="verifySetup" finished-at="2026-04-14T14:12:44 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:40:51 IST" name="setUp" finished-at="2026-04-14T15:41:02 IST" duration-ms="10474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySetup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.BaseTestCheck@1d296da]" started-at="2026-04-14T14:12:44 IST" name="tearDown" finished-at="2026-04-14T14:12:45 IST" duration-ms="776" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:40:51 IST" name="setUp" finished-at="2026-04-14T15:41:01 IST" duration-ms="9875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:40:51 IST" name="setUp" finished-at="2026-04-14T15:41:02 IST" duration-ms="11057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyFormSubmission()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:01 IST" name="testEmptyFormSubmission" finished-at="2026-04-14T15:41:34 IST" duration-ms="33438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormSubmission -->
+        <test-method signature="testValidFormSubmission()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:02 IST" name="testValidFormSubmission" finished-at="2026-04-14T15:41:19 IST" duration-ms="17755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidFormSubmission -->
+        <test-method signature="testCheckboxAndRadio()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:02 IST" name="testCheckboxAndRadio" finished-at="2026-04-14T15:41:17 IST" duration-ms="14890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckboxAndRadio -->
+        <test-method signature="testDropdownSelection()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:02 IST" name="testDropdownSelection" finished-at="2026-04-14T15:41:16 IST" duration-ms="13626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdownSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:16 IST" name="tearDown" finished-at="2026-04-14T15:41:17 IST" duration-ms="1272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.srm.hackathon.adminpanel.tests.BaseTestCheck -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:17 IST" name="tearDown" finished-at="2026-04-14T15:41:17 IST" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:19 IST" name="tearDown" finished-at="2026-04-14T15:41:21 IST" duration-ms="1895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FormTest@557caf28]" started-at="2026-04-14T15:41:34 IST" name="tearDown" finished-at="2026-04-14T15:41:35 IST" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.hackathon.adminpanel.tests.FormTest -->
+    </test> <!-- Form Tests -->
+  </suite> <!-- Suite -->
 </testng-results>

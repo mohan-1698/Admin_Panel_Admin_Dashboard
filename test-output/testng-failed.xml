@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Form Tests(failed)">
+    <classes>
+      <class name="com.srm.hackathon.adminpanel.tests.FormTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testEmptyFormSubmission"/>
+        </methods>
+      </class> <!-- com.srm.hackathon.adminpanel.tests.FormTest -->
+    </classes>
+  </test> <!-- Form Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

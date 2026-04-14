@@ -1,10 +1,10 @@
 package com.srm.hackathon.adminpanel.base;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
 import com.srm.hackathon.adminpanel.factory.DriverFactory;
+import com.srm.hackathon.adminpanel.utils.WaitUtils;
 
 public class BasePage {
 
@@ -15,18 +15,28 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    // Common reusable methods
-
     protected void click(WebElement element) {
-        element.click();
+        scrollToElement(element);
+        try {
+            WaitUtils.waitForElementClickable(element).click();
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].click();", element);
+        }
     }
 
     protected void type(WebElement element, String value) {
-        element.clear();
-        element.sendKeys(value);
+        WebElement el = WaitUtils.waitForElementVisible(element);
+        el.clear();
+        el.sendKeys(value);
     }
 
     protected String getText(WebElement element) {
-        return element.getText();
+        return WaitUtils.waitForElementVisible(element).getText();
+    }
+
+    protected void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
     }
 }
