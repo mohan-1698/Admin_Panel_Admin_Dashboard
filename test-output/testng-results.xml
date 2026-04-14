@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T13:59:29 IST" name="Default suite" finished-at="2026-04-14T13:59:41 IST" duration-ms="11725">
+  <suite started-at="2026-04-14T14:12:35 IST" name="Default suite" finished-at="2026-04-14T14:12:45 IST" duration-ms="10027">
     <groups>
     </groups>
-    <test started-at="2026-04-14T13:59:29 IST" name="Default test" finished-at="2026-04-14T13:59:41 IST" duration-ms="11725">
-      <class name="com.srm.hackathon.adminpanel.tests.DriverTest">
-        <test-method signature="testDriverSetup()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DriverTest@35d019a3]" started-at="2026-04-14T13:59:29 IST" name="testDriverSetup" finished-at="2026-04-14T13:59:41 IST" duration-ms="11678" status="PASS">
+    <test started-at="2026-04-14T14:12:35 IST" name="Default test" finished-at="2026-04-14T14:12:45 IST" duration-ms="10027">
+      <class name="com.srm.hackathon.adminpanel.tests.BaseTestCheck">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.BaseTestCheck@1d296da]" started-at="2026-04-14T14:12:35 IST" name="setUp" finished-at="2026-04-14T14:12:44 IST" duration-ms="9171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDriverSetup -->
-      </class> <!-- com.srm.hackathon.adminpanel.tests.DriverTest -->
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySetup()[pri:0, instance:com.srm.hackathon.adminpanel.tests.BaseTestCheck@1d296da]" started-at="2026-04-14T14:12:44 IST" name="verifySetup" finished-at="2026-04-14T14:12:44 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySetup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.BaseTestCheck@1d296da]" started-at="2026-04-14T14:12:44 IST" name="tearDown" finished-at="2026-04-14T14:12:45 IST" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.hackathon.adminpanel.tests.BaseTestCheck -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

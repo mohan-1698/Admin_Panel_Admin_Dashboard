@@ -1,21 +1,20 @@
-package com.srm.hackathon.adminpanel.tests;
+package com.srm.hackathon.adminpanel.base;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.srm.hackathon.adminpanel.factory.DriverFactory;
 import com.srm.hackathon.adminpanel.utils.ConfigReader;
 
-public class DriverTest {
+public class BaseTest {
 
-    @Test
-    public void testDriverSetup() {
-
+    @BeforeMethod
+    public void setUp() {
         DriverFactory.initDriver();
-
         DriverFactory.getDriver().get(ConfigReader.getBaseUrl());
+    }
 
-        System.out.println("Title: " + DriverFactory.getDriver().getTitle());
-
+    @AfterMethod
+    public void tearDown() {
         DriverFactory.quitDriver();
     }
 }
