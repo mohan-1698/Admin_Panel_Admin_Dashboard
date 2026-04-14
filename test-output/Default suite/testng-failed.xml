@@ -6,8 +6,8 @@
       <class name="com.srm.hackathon.adminpanel.tests.FormTest">
         <methods>
           <include name="tearDown"/>
+          <include name="testValidFormSubmission"/>
           <include name="setUp"/>
-          <include name="testEmptyFormSubmission"/>
         </methods>
       </class> <!-- com.srm.hackathon.adminpanel.tests.FormTest -->
     </classes>

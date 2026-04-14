@@ -106,6 +106,8 @@ public class FormPage extends BasePage {
     public void clickSubmit() {
         click(submitBtn);
     }
+    
+
 
     // ================= RESULT METHODS =================
 

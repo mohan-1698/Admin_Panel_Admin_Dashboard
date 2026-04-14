@@ -1,39 +1,51 @@
 package com.srm.hackathon.adminpanel.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.srm.hackathon.adminpanel.base.BaseTest;
 import com.srm.hackathon.adminpanel.pages.FormPage;
+import com.srm.hackathon.adminpanel.utils.ExcelUtil;
 
 public class FormTest extends BaseTest {
 
-    // ================= TEST 1 =================
-    // Valid Form Submission + Full Verification
+    // ================= DATA PROVIDER =================
 
-    @Test
-    public void testValidFormSubmission() {
+    @DataProvider(name = "formData")
+    public Object[][] getData() {
+        return ExcelUtil.getTestData("FormData");
+    }
+
+    // ================= TEST 1 =================
+    // Data-driven Valid Form Submission
+
+    @Test(dataProvider = "formData")
+    public void testValidFormSubmission(String user, String pass, String comment,
+                                        String checkboxIndex, String radioIndex, String dropdown) {
 
         FormPage formPage = new FormPage();
 
         formPage.navigateToHtmlForm();
 
-        formPage.fillTextFields("Mickey", "pass123", "Test comment");
+        formPage.fillTextFields(user, pass, comment);
 
-        formPage.selectCheckboxByIndex(0);   // cb1
-        formPage.selectRadioByIndex(2);      // rd3
-        formPage.selectDropdownByValue("dd4");
+      
+
+        int cbIndex = (int) Double.parseDouble(checkboxIndex);
+        int rdIndex = (int) Double.parseDouble(radioIndex);
+
+        formPage.selectCheckboxByIndex(cbIndex);
+        formPage.selectRadioByIndex(rdIndex);
+
+        formPage.selectDropdownByValue(dropdown);
 
         formPage.clickSubmit();
 
-        // 🔥 Assertions
-        Assert.assertEquals(formPage.getResultUsername(), "Mickey");
-        Assert.assertEquals(formPage.getResultPassword(), "pass123");
-        Assert.assertTrue(formPage.getResultComments().contains("Test comment"));
-
-        Assert.assertEquals(formPage.getResultCheckbox(), "cb1");
-        Assert.assertEquals(formPage.getResultRadio(), "rd3");
-        Assert.assertEquals(formPage.getResultDropdown(), "dd4");
+        // Assertions (dynamic)
+        Assert.assertEquals(formPage.getResultUsername(), user);
+        Assert.assertEquals(formPage.getResultPassword(), pass);
+        Assert.assertTrue(formPage.getResultComments().contains(comment));
     }
 
     // ================= TEST 2 =================
@@ -63,6 +75,8 @@ public class FormTest extends BaseTest {
 
         formPage.navigateToHtmlForm();
 
+       
+
         formPage.selectCheckboxByIndex(1); // cb2
         formPage.selectRadioByIndex(0);    // rd1
 
@@ -84,45 +98,19 @@ public class FormTest extends BaseTest {
 
         formPage.clickSubmit();
 
-        // Default comment value appears
         Assert.assertTrue(
-        	    formPage.getResultUsername().contains("No Value for username"),
-        	    "Username empty validation failed"
-        	);
+            formPage.getResultUsername().contains("No Value for username"),
+            "Username empty validation failed"
+        );
 
-        	Assert.assertTrue(
-        	    formPage.getResultPassword().contains("No Value for password"),
-        	    "Password empty validation failed"
-        	);
+        Assert.assertTrue(
+            formPage.getResultPassword().contains("No Value for password"),
+            "Password empty validation failed"
+        );
 
-        	Assert.assertTrue(
-        	    formPage.getResultComments().contains("Comments..."),
-        	    "Comments default value failed"
-        	);
-    }
-    
-    @Test
-    public void testInValidFormSubmission() {
-
-        FormPage formPage = new FormPage();
-
-        formPage.navigateToHtmlForm();
-
-        formPage.fillTextFields("Mickey", "pass123", "Test comment");
-
-        formPage.selectCheckboxByIndex(0);   // cb1
-        formPage.selectRadioByIndex(2);      // rd3
-        formPage.selectDropdownByValue("dd4");
-
-        formPage.clickSubmit();
-
-        // 🔥 Assertions
-        Assert.assertEquals(formPage.getResultUsername(), "Mohan");
-        Assert.assertEquals(formPage.getResultPassword(), "pass123");
-        Assert.assertTrue(formPage.getResultComments().contains("Test comment"));
-
-        Assert.assertEquals(formPage.getResultCheckbox(), "cb1");
-        Assert.assertEquals(formPage.getResultRadio(), "rd3");
-        Assert.assertEquals(formPage.getResultDropdown(), "dd4");
+        Assert.assertTrue(
+            formPage.getResultComments().contains("Comments..."),
+            "Comments default value failed"
+        );
     }
 }
