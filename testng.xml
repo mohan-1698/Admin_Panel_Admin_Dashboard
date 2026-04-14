@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" parallel="methods" thread-count="2">
+<suite name="Hackathon Suite" parallel="tests" thread-count="2">
 
-<listeners>
-    <listener class-name="com.srm.hackathon.adminpanel.listeners.TestListener"/>
-</listeners>
+    <!-- 🔥 LISTENER -->
+    <listeners>
+        <listener class-name="com.srm.hackathon.adminpanel.listeners.TestListener"/>
+    </listeners>
 
+    <!-- ================= FORM ================= -->
+    <test name="Form Tests">
+        <classes>
+            <class name="com.srm.hackathon.adminpanel.tests.FormTest"/>
+        </classes>
+    </test>
 
-  <test name="Form Tests">
+    <!-- ================= ALERT ================= -->
+    <test name="Alert Tests">
+        <classes>
+            <class name="com.srm.hackathon.adminpanel.tests.AlertTest"/>
+        </classes>
+    </test>
 
-    <classes>
-      <class name="com.srm.hackathon.adminpanel.tests.FormTest"/>
-    </classes>
+    <!-- ================= FRAME ================= -->
+    <test name="Frame Tests">
+        <classes>
+            <class name="com.srm.hackathon.adminpanel.tests.FrameTest"/>
+        </classes>
+    </test>
 
-  </test>
+    <!-- ================= DYNAMIC ================= -->
+    <test name="Dynamic Tests">
+        <classes>
+            <class name="com.srm.hackathon.adminpanel.tests.DynamicTest"/>
+        </classes>
+    </test>
+
+    <!-- ================= TABLE ================= -->
+    <test name="Table Tests">
+        <classes>
+            <class name="com.srm.hackathon.adminpanel.tests.TableTest"/>
+        </classes>
+    </test>
 
 </suite>

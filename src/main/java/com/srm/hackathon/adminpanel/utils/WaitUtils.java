@@ -41,4 +41,16 @@ public class WaitUtils {
 
         return wait.until(ExpectedConditions.urlContains(partialUrl));
     }
+    
+    public static boolean waitForTextToBePresent(String text) {
+
+        WebDriverWait wait = new WebDriverWait(
+                DriverFactory.getDriver(),
+                Duration.ofSeconds(ConfigReader.getTimeout())
+        );
+
+        return wait.until(driver ->
+                driver.getPageSource().contains(text)
+        );
+    }
 }

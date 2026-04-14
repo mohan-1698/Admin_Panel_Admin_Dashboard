@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.srm.hackathon.adminpanel.tests.FrameTest">
+      <class name="com.srm.hackathon.adminpanel.tests.TableTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testInteractInsideIframe"/>
+          <include name="testDynamicTableUpdate"/>
         </methods>
-      </class> <!-- com.srm.hackathon.adminpanel.tests.FrameTest -->
+      </class> <!-- com.srm.hackathon.adminpanel.tests.TableTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
