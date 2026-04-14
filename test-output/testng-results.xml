@@ -1,61 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T20:59:33 IST" name="Default suite" finished-at="2026-04-14T21:00:18 IST" duration-ms="44933">
+  <suite started-at="2026-04-14T22:13:49 IST" name="Default suite" finished-at="2026-04-14T22:15:01 IST" duration-ms="71731">
     <groups>
     </groups>
-    <test started-at="2026-04-14T20:59:33 IST" name="Default test" finished-at="2026-04-14T21:00:18 IST" duration-ms="44933">
-      <class name="com.srm.hackathon.adminpanel.tests.FrameTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:33 IST" name="setUp" finished-at="2026-04-14T20:59:42 IST" duration-ms="8958" status="PASS">
+    <test started-at="2026-04-14T22:13:49 IST" name="Default test" finished-at="2026-04-14T22:15:01 IST" duration-ms="71731">
+      <class name="com.srm.hackathon.adminpanel.tests.DynamicTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:13:49 IST" name="setUp" finished-at="2026-04-14T22:14:02 IST" duration-ms="13278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testExternalIframeLoad()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:42 IST" name="testExternalIframeLoad" finished-at="2026-04-14T20:59:48 IST" duration-ms="5696" status="PASS">
+        <test-method signature="testDynamicButtonsFlow()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:02 IST" name="testDynamicButtonsFlow" finished-at="2026-04-14T22:14:17 IST" duration-ms="15145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testExternalIframeLoad -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:48 IST" name="tearDown" finished-at="2026-04-14T20:59:48 IST" duration-ms="303" status="PASS">
+        </test-method> <!-- testDynamicButtonsFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:17 IST" name="tearDown" finished-at="2026-04-14T22:14:18 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:48 IST" name="setUp" finished-at="2026-04-14T20:59:53 IST" duration-ms="4991" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:18 IST" name="setUp" finished-at="2026-04-14T22:14:26 IST" duration-ms="8412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testIframeInteraction()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:53 IST" name="testIframeInteraction" finished-at="2026-04-14T20:59:59 IST" duration-ms="5808" status="PASS">
+        <test-method signature="testDynamicResultVerification()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:26 IST" name="testDynamicResultVerification" finished-at="2026-04-14T22:14:43 IST" duration-ms="16449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testIframeInteraction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:59 IST" name="tearDown" finished-at="2026-04-14T20:59:59 IST" duration-ms="229" status="PASS">
+        </test-method> <!-- testDynamicResultVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:43 IST" name="tearDown" finished-at="2026-04-14T22:14:43 IST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T20:59:59 IST" name="setUp" finished-at="2026-04-14T21:00:04 IST" duration-ms="4654" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:43 IST" name="setUp" finished-at="2026-04-14T22:14:54 IST" duration-ms="10538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testIframeTextVerification()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T21:00:04 IST" name="testIframeTextVerification" finished-at="2026-04-14T21:00:10 IST" duration-ms="5605" status="PASS">
+        <test-method signature="testRedirectValidation()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:14:54 IST" name="testRedirectValidation" finished-at="2026-04-14T22:15:00 IST" duration-ms="6705" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testIframeTextVerification -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T21:00:10 IST" name="tearDown" finished-at="2026-04-14T21:00:10 IST" duration-ms="286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T21:00:10 IST" name="setUp" finished-at="2026-04-14T21:00:14 IST" duration-ms="3851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSwitchBackToMainPage()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T21:00:14 IST" name="testSwitchBackToMainPage" finished-at="2026-04-14T21:00:18 IST" duration-ms="4157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSwitchBackToMainPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.FrameTest@34e9fd99]" started-at="2026-04-14T21:00:18 IST" name="tearDown" finished-at="2026-04-14T21:00:18 IST" duration-ms="270" status="PASS">
+        </test-method> <!-- testRedirectValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.adminpanel.tests.DynamicTest@45752059]" started-at="2026-04-14T22:15:00 IST" name="tearDown" finished-at="2026-04-14T22:15:01 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.srm.hackathon.adminpanel.tests.FrameTest -->
+      </class> <!-- com.srm.hackathon.adminpanel.tests.DynamicTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

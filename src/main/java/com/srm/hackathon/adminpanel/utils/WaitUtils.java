@@ -31,4 +31,14 @@ public class WaitUtils {
         );
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
+    
+    public static boolean waitForUrlContains(String partialUrl) {
+
+        WebDriverWait wait = new WebDriverWait(
+                DriverFactory.getDriver(),
+                Duration.ofSeconds(ConfigReader.getTimeout())
+        );
+
+        return wait.until(ExpectedConditions.urlContains(partialUrl));
+    }
 }
