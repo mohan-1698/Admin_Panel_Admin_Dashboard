@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.srm.hackathon.adminpanel.tests.FormTest">
+      <class name="com.srm.hackathon.adminpanel.tests.FrameTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testValidFormSubmission"/>
           <include name="setUp"/>
+          <include name="testInteractInsideIframe"/>
         </methods>
-      </class> <!-- com.srm.hackathon.adminpanel.tests.FormTest -->
+      </class> <!-- com.srm.hackathon.adminpanel.tests.FrameTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
