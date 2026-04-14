@@ -100,4 +100,29 @@ public class FormTest extends BaseTest {
         	    "Comments default value failed"
         	);
     }
+    
+    @Test
+    public void testInValidFormSubmission() {
+
+        FormPage formPage = new FormPage();
+
+        formPage.navigateToHtmlForm();
+
+        formPage.fillTextFields("Mickey", "pass123", "Test comment");
+
+        formPage.selectCheckboxByIndex(0);   // cb1
+        formPage.selectRadioByIndex(2);      // rd3
+        formPage.selectDropdownByValue("dd4");
+
+        formPage.clickSubmit();
+
+        // 🔥 Assertions
+        Assert.assertEquals(formPage.getResultUsername(), "Mohan");
+        Assert.assertEquals(formPage.getResultPassword(), "pass123");
+        Assert.assertTrue(formPage.getResultComments().contains("Test comment"));
+
+        Assert.assertEquals(formPage.getResultCheckbox(), "cb1");
+        Assert.assertEquals(formPage.getResultRadio(), "rd3");
+        Assert.assertEquals(formPage.getResultDropdown(), "dd4");
+    }
 }
