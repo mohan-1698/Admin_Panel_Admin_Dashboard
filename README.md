@@ -1,6 +1,6 @@
 # AdminPanel-Admin Dashboard - Automation Test Suite
 
-## 📋 Project Overview
+##  Project Overview
 
 **AdminPanel-Admin Dashboard** is a **Selenium-based automated test suite** for testing the admin dashboard application. It's built using the **Page Object Model (POM)** design pattern with **TestNG** framework to test various UI components including forms, alerts, frames, dynamic elements, and tables.
 
@@ -8,7 +8,7 @@ The project is designed for **data-driven testing** with **parallel execution** 
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Automate UI testing of Admin Dashboard application
 - Implement reusable and maintainable test code using POM
@@ -20,7 +20,7 @@ The project is designed for **data-driven testing** with **parallel execution** 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 AdminPanel-Admin_Dashboard/
@@ -88,7 +88,7 @@ AdminPanel-Admin_Dashboard/
 
 ---
 
-## 🔧 Technologies & Dependencies
+##  Technologies & Dependencies
 
 ### Core Technologies
 - **Java 8+** - Programming language
@@ -142,7 +142,7 @@ AdminPanel-Admin_Dashboard/
 
 ---
 
-## 🏗️ Architecture & Design Patterns
+##  Architecture & Design Patterns
 
 ### 1. **Page Object Model (POM)**
 Each page/screen of the application is represented as a separate class:
@@ -163,7 +163,7 @@ Each page/screen of the application is represented as a separate class:
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### config.properties
 
@@ -200,13 +200,13 @@ headless=true
 
 ---
 
-## 📋 Test Suites
+##  Test Suites
 
 ### 1. **FormTest** - HTML Form Testing
 Tests form submission with various UI elements:
-- ✅ **testValidFormSubmission** - Data-driven form submission test
-- ✅ **testDropdownSelection** - Dropdown value verification
-- ✅ **testCheckboxAndRadio** - Checkbox and radio button selection
+-  **testValidFormSubmission** - Data-driven form submission test
+-  **testDropdownSelection** - Dropdown value verification
+-  **testCheckboxAndRadio** - Checkbox and radio button selection
 
 **Key Features:**
 - Data-driven using Excel file (`FormData` sheet)
@@ -215,10 +215,10 @@ Tests form submission with various UI elements:
 
 ### 2. **AlertTest** - JavaScript Alert Handling
 Tests browser alert interactions:
-- ✅ **testSimpleAlert** - Accept simple alert
-- ✅ **testConfirmAccept** - Accept confirm dialog
-- ✅ **testConfirmDismiss** - Dismiss confirm dialog
-- ✅ **testPrompt** - Enter text in prompt dialog
+-  **testSimpleAlert** - Accept simple alert
+-  **testConfirmAccept** - Accept confirm dialog
+-  **testConfirmDismiss** - Dismiss confirm dialog
+-  **testPrompt** - Enter text in prompt dialog
 
 **Key Features:**
 - Tests all alert types (alert, confirm, prompt)
@@ -226,14 +226,14 @@ Tests browser alert interactions:
 
 ### 3. **FrameTest** - Frame/Iframe Handling
 Tests switching between frames:
-- ✅ Frame detection and switching
-- ✅ Element interaction within frames
-- ✅ Exiting frames back to main content
+-  Frame detection and switching
+-  Element interaction within frames
+-  Exiting frames back to main content
 
 ### 4. **DynamicTest** - Dynamic Elements
 Tests elements that appear/disappear dynamically:
-- ✅ **testDynamicButtonsFlow** - Sequence of button clicks
-- ✅ **testDynamicResultVerification** - Result validation
+-  **testDynamicButtonsFlow** - Sequence of button clicks
+-  **testDynamicResultVerification** - Result validation
 
 **Key Features:**
 - Tests wait conditions for dynamic elements
@@ -241,8 +241,8 @@ Tests elements that appear/disappear dynamically:
 
 ### 5. **TableTest** - HTML Table Operations
 Tests table data validation:
-- ✅ **testTableHeaders** - Header verification
-- ✅ **testInitialTableData** - Data row verification
+-  **testTableHeaders** - Header verification
+-  **testInitialTableData** - Data row verification
 
 **Key Features:**
 - Table header validation
@@ -250,7 +250,7 @@ Tests table data validation:
 
 ---
 
-## 🚀 How to Run Tests
+##  How to Run Tests
 
 ### Prerequisites
 - Java 8 or higher installed
@@ -284,7 +284,7 @@ mvn clean test -Dbrowser=chrome -Dheadless=true
 
 ---
 
-## 📊 Test Reports
+##  Test Reports
 
 ### ExtentReports
 - **Location:** `reports/ExtentReport.html`
@@ -307,7 +307,7 @@ mvn clean test -Dbrowser=chrome -Dheadless=true
 
 ---
 
-## 🔑 Key Classes & Methods
+##  Key Classes & Methods
 
 ### BasePage.java
 ```java
@@ -340,7 +340,7 @@ public static Object[][] getTestData(String sheetName)  // Get data from Excel s
 
 ---
 
-## 🛠️ Best Practices Implemented
+##  Best Practices Implemented
 
 1. **Page Object Model** - Separation of page elements and test logic
 2. **DRY Principle** - Reusable methods in BasePage and BasePage utilities
@@ -353,7 +353,7 @@ public static Object[][] getTestData(String sheetName)  // Get data from Excel s
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Tests Fail with "Element Not Found"
 - ✅ Check if timeout in config.properties is sufficient
@@ -377,7 +377,7 @@ public static Object[][] getTestData(String sheetName)  // Get data from Excel s
 
 ---
 
-## 📈 Metrics & Results
+##  Metrics & Results
 
 After test execution, review:
 - **Total Tests:** Displayed in reports
@@ -413,7 +413,7 @@ stage('Report') {
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - **Base URL:** The tests run against `https://testpages.eviltester.com/` (free test application)
 - **Browser:** Configured for Chrome; can be modified in config.properties
@@ -422,7 +422,7 @@ stage('Report') {
 
 ---
 
-## 👨‍💻 Author & Version
+##  Author & Version
 
 - **Project Name:** AdminPanel-Admin Dashboard
 - **Version:** 0.0.1-SNAPSHOT
@@ -431,7 +431,7 @@ stage('Report') {
 
 ---
 
-## 📞 Support & Contact
+##  Support & Contact
 
 For issues or questions:
 - Review test logs in `test-output/`
@@ -440,5 +440,3 @@ For issues or questions:
 - Review page locators in respective Page classes
 
 ---
-
-**Happy Testing! 🎉**
